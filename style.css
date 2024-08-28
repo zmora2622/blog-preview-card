@@ -1,0 +1,134 @@
+:root {
+ --bg-color: hsl(47, 88%, 63%);
+ --color-white: hsl(0, 0%, 100%);
+ --color-gray-500: hsl(0, 0%, 42%);
+ --color-gray-950: hsl(0, 0%, 7%);
+}
+
+*,
+*::before,
+*::after {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+
+@font-face {
+ font-family: "figtree";
+ src: url(./assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+@font-face {
+ font-family: "figtree-italic";
+ src: url(./assets/fonts/Figtree-Italic-VariableFont_wght.ttf);
+}
+
+html,
+body {
+ height: 100%;
+}
+
+html {
+ font-size: 62.5%;
+}
+
+body {
+ min-height: 100vh;
+ background-color: var(--bg-color);
+ font-family: figtree;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+a {
+ text-decoration: none;
+}
+
+main {
+ margin: 0 10px;
+}
+
+.card {
+ background-color: var(--color-white);
+ max-width: 384px;
+ min-height: 522px;
+ padding: 2.4rem;
+ border-radius: 2rem;
+ display: flex;
+ flex-direction: column;
+ box-shadow: inset 0 0 0 1px var(--color-gray-950),
+  0.8rem 0.8rem var(--color-gray-950);
+}
+
+.card__header img {
+ width: 100%;
+ border-radius: 1.2rem;
+ overflow: hidden;
+ object-fit: cover;
+}
+
+.card > *:not(:last-child) {
+ margin-bottom: 2.4rem;
+}
+
+.card__body {
+ display: flex;
+ flex-direction: column;
+}
+
+.card__body > *:not(:last-child) {
+ margin-bottom: 1.5rem;
+}
+
+.card__category {
+ display: inline-block;
+ padding: 0.5rem 1.3rem;
+ font-weight: bolder;
+ font-size: 1.4rem;
+ border-radius: 0.4rem;
+ background-color: var(--bg-color);
+ align-self: start;
+}
+
+.card__body p {
+ font-size: 1.4rem;
+ font-weight: 500;
+ color: var(--color-gray-950);
+}
+
+.card__body h1 {
+ font-size: 2.4rem;
+ color: var(--color-gray-950);
+}
+
+.card__body a:hover h1 {
+ color: var(--bg-color);
+}
+
+.card__body h2 {
+ font-size: 1.6rem;
+ color: var(--color-gray-500);
+ line-height: 1.5;
+ font-weight: 500;
+}
+
+.card__footer {
+ display: flex;
+ align-self: start;
+ align-items: center;
+ gap: 1.2rem;
+ flex-grow: 1;
+}
+
+.card__footer img {
+ max-width: 3.2rem;
+ max-height: 3.2rem;
+ height: 100%;
+ object-fit: cover;
+}
+
+.card__footer p {
+ font-weight: 800;
+ font-size: 1.4rem;
+}
