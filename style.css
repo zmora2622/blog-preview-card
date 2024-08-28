@@ -104,6 +104,7 @@ main {
 
 .card__body a:hover h1 {
  color: var(--bg-color);
+ cursor: pointer;
 }
 
 .card__body h2 {
