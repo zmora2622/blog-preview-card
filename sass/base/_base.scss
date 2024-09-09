@@ -1,0 +1,13 @@
+@use "../utils/variables" as variable;
+@use "../utils/functions" as function;
+
+body {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-family: "figtree";
+ font-size: function.to_rem(14px);
+ font-weight: 500;
+ line-height: 1.5;
+ background-color: variable.$yellow;
+}

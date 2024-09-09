@@ -1,0 +1,66 @@
+@use "../utils/variables" as variable;
+@use "../utils/functions" as function;
+.card {
+ display: flex;
+ flex-direction: column;
+ padding: function.to_rem(24px);
+ max-width: function.to_rem(384px);
+ //  min-height: 522px;
+ background-color: variable.$white;
+ border-radius: function.to_rem(20px);
+ box-shadow: inset 0 0 0 1px variable.$gray-950, 8px 8px variable.$gray-950;
+ row-gap: function.to_rem(23px);
+}
+
+.card__image {
+ width: 100%;
+ border-radius: function.to_rem(12px);
+ overflow: hidden;
+ object-fit: cover;
+}
+
+.card__category {
+ padding: function.to_rem(4px) function.to_rem(12px);
+ background-color: variable.$yellow;
+ border-radius: function.to_rem(4px);
+ font-weight: 800;
+
+ align-self: start;
+}
+
+.card__body {
+ display: flex;
+ flex-direction: column;
+ row-gap: function.to_rem(12px);
+}
+
+.card__header {
+ font-size: function.to_rem(24px);
+ font-weight: 700;
+ color: variable.$gray-950;
+
+ &:hover {
+  color: variable.$yellow;
+ }
+}
+
+.card__text--medium-gray {
+ font-size: function.to_rem(16px);
+ color: variable.$gray-500;
+}
+
+.card__footer {
+ display: flex;
+ align-self: start;
+ align-items: center;
+ column-gap: function.to_rem(12px);
+ flex-grow: 1;
+}
+
+.card__text--bold {
+ font-weight: 800;
+}
+
+.card__image--size {
+ max-width: function.to_rem(32px);
+}
