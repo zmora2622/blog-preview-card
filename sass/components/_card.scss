@@ -36,6 +36,7 @@
  color: variable.$gray-950;
  font-size: function.to_rem(24px);
  font-weight: 900;
+ transition: color 0.3s ease;
 
  &::after {
   content: "";
@@ -49,7 +50,6 @@
 
  &:hover {
   color: variable.$yellow;
-  transition: color 0.3s;
   cursor: pointer;
  }
 }

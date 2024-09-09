@@ -131,6 +131,7 @@ body {
   color: hsl(0, 0%, 7%);
   font-size: 1.5rem;
   font-weight: 900;
+  transition: color 0.3s ease;
 }
 .card__link::after {
   content: "";
@@ -143,7 +144,6 @@ body {
 }
 .card__link:hover {
   color: hsl(47, 88%, 63%);
-  transition: color 0.3s;
   cursor: pointer;
 }
 
